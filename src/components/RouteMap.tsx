@@ -19,10 +19,5 @@ const RouteMap = () => {
     </div>
   );
 };
-<<<<<<< HEAD
-
-=======
->>>>>>> 20cb85d03d8025cbf62ca6559417e5d90ed94df4
-
 
 export default RouteMap;
