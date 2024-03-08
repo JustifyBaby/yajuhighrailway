@@ -1,6 +1,7 @@
 import route from "../assets/yaju-route-ver11.pdf";
 
-const RouteMap = () => (
+const RouteMap = () => {
+  return (
   <div className="route">
     <div>
       <iframe src={route}></iframe>
@@ -12,6 +13,7 @@ const RouteMap = () => (
     </div>
   </div>
 );
+};
 
 
 export default RouteMap;
