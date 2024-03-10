@@ -7,17 +7,23 @@ const Deals = () => {
     <div>
       <h2>お得な情報</h2>
       <ul>
-        <Link to={`/${root}/article/1`}>
-          ついに、当社独自のICカードを開発!
-        </Link>
+        <li>
+          <Link to={`/${root}/article/1`}>
+            ついに、当社独自のICカードを開発!
+          </Link>
+        </li>
 
-        <Link to={`/${root}/article/2`}>
-          野獣県の旅は特急「ゆめ」！ 旅行の日は少し贅沢しませんか？
-        </Link>
+        <li>
+          <Link to={`/${root}/article/2`}>
+            野獣県の旅は特急「ゆめ」！ 旅行の日は少し贅沢しませんか？
+          </Link>
+        </li>
 
-        <Link to={`/${root}/article/3`}>
-          野獣高速交通社公式アプリ「Senpai」がリリース。
-        </Link>
+        <li>
+          <Link to={`/${root}/article/3`}>
+            野獣高速交通社公式アプリ「Senpai」がリリース。
+          </Link>
+        </li>
       </ul>
     </div>
   )
