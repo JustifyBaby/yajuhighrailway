@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import BackHome from "./BackHome"
+// import BackHome from "./BackHome"
 import { root } from "../global"
 
 const Deals = () => {
