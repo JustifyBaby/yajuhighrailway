@@ -1,11 +1,10 @@
-import { Route, Routes, useParams } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, useParams } from 'react-router-dom'
 import './App.css'
 import Title from './components/Title'
 import Home from './components/Home'
 import Reservate from './components/Reservate'
 import Plan from './components/Plan'
 import NotFound from './components/NotFound'
-import BackHome from './components/BackHome'
 import { root } from './global'
 import Card from './components/Articles/Card'
 import LtdExp from './components/Articles/LtdExp'
@@ -14,17 +13,18 @@ import ReleasedApp from './components/Articles/ReleasedApp'
 function App() {
   return (
     <div>
-      <Title />
-      <Routes>
-        <Route path={`/${root}/`} element={<Home />} />
-        <Route path={`${root}/reservate`} element={<Reservate />} />
-        <Route path={`${root}/article`} element={<Article />}>
-          <Route path=":id" element={<Article />}></Route>
-        </Route>
-        <Route path={`${root}/plan`} element={<Plan />} />
-        <Route path={`${root}/*/`} element={<NotFound />} />
-      </Routes>
-      <BackHome />
+      <BrowserRouter>
+        <Title />
+        <Routes>
+          <Route path={`/${root}/`} element={<Home />} />
+          <Route path={`${root}/reservate`} element={<Reservate />} />
+          <Route path={`${root}/article`} element={<Article />}>
+            <Route path=":id" element={<Article />}></Route>
+          </Route>
+          <Route path={`${root}/plan`} element={<Plan />} />
+          <Route path={`${root}/*/`} element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }

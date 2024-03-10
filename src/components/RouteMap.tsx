@@ -1,12 +1,8 @@
-// import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import route from "../assets/dammy.pdf";
 
 
 const RouteMap = () => {
-  // useEffect(() => {
-  //   window.location.href = "/";
-  // }, []);
   return (
     <div className="route">
       <div>
