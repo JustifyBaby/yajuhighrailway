@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
+import { root } from "../global";
+
 const BackHome = () => (
   <div>
-    <a href="/">ホームへ戻る。</a>
+    <Link to={root}>ホームへ戻る。</Link>
   </div>
 );
 

@@ -1,22 +1,24 @@
-import { useEffect } from "react";
-import route from "../assets/yaju-route-ver11.pdf";
+// import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import route from "../assets/dammy.pdf";
 
 
 const RouteMap = () => {
-  useEffect(() => {
-    window.location.href = "/";
-  }, []);
+  // useEffect(() => {
+  //   window.location.href = "/";
+  // }, []);
   return (
     <div className="route">
       <div>
         <iframe src={route}></iframe>
       </div>
       <div>
-        <a href={route} target="_blank" rel="noopener">
+
+        <Link to={route} target="_blank" rel="noopener">
           PDF路線図（田所本線、空港線、新幹線）
-        </a>
+        </Link>
       </div>
-    </div>
+    </div >
   );
 };
 

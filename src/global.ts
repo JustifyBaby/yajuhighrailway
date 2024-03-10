@@ -1,1 +1,2 @@
-export const root: string = "yajuhighrailway";
+const root: string = "yajuhighrailway";
+export { root };

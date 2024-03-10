@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { root } from "../global"
 
 const ToReservate = () => {
@@ -6,7 +7,7 @@ const ToReservate = () => {
       <h2>
         特急券、指定席券の予約はこちら
         <br />
-        <a href={`${root}/reservate`}>⇒オンラインチケット売り場</a>
+        <Link to={`/${root}/reservate/`}>⇒オンラインチケット売り場</Link>
       </h2>
     </div>
   )
