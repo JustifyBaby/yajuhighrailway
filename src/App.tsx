@@ -9,6 +9,7 @@ import { root } from './global'
 import Card from './components/Articles/Card'
 import LtdExp from './components/Articles/LtdExp'
 import ReleasedApp from './components/Articles/ReleasedApp'
+import Concept from './components/Concept'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path={`${root}/article`} element={<Article />}>
             <Route path=":id" element={<Article />}></Route>
           </Route>
+          <Route path={`${root}/concept`} element={<Concept />} />
           <Route path={`${root}/plan`} element={<Plan />} />
           <Route path={`${root}/*/`} element={<NotFound />} />
         </Routes>

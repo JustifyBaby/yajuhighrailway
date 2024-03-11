@@ -37,6 +37,19 @@ body {
 .route div {
   display: flex;
   justify-content: center;
+  width: 100%;
+}
+
+.iframe-wrap {
+  /* 資料のサイズは588.95 */
+  /* height: 325px; */
+  text-align: center;
+  width: 589px;
+  height: 325px;
+}
+
+.iframe {
+  border: none;
 }
 
 .plans {
