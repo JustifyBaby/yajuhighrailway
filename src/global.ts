@@ -1,2 +1,3 @@
 const root: string = "yajuhighrailway";
-export { root };
+const rel: string = "noopener noreferrer"
+export { root, rel };

@@ -10,14 +10,18 @@ import Card from './components/Articles/Card'
 import LtdExp from './components/Articles/LtdExp'
 import ReleasedApp from './components/Articles/ReleasedApp'
 import Concept from './components/Concept'
+import TimeTable from './components/TimeTable'
+import ShortCut from './components/ShortCut'
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Title />
+        <ShortCut />
         <Routes>
-          <Route path={`/${root}/`} element={<Home />} />
+          <Route path={`${root}/`} element={<Home />} />
+          <Route path={`${root}/time-table`} element={<TimeTable />} />
           <Route path={`${root}/reservate`} element={<Reservate />} />
           <Route path={`${root}/article`} element={<Article />}>
             <Route path=":id" element={<Article />}></Route>
