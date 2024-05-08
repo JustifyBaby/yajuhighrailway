@@ -35,6 +35,10 @@
   height: 325px;
 }
 
+.route-wrap a {
+  font-size: 1.2rem;
+}
+
 .iframe {
   border: none;
 }
@@ -58,4 +62,9 @@
   width: 300px;
   display: flex;
   justify-content: space-between;
+}
+
+.download {
+  width: 100%;
+  height: 100vh;
 }
